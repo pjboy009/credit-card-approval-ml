@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Approval</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 40px auto;
+            width: 420px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 6px;
+        }
+
+        button {
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Credit Card Approval System</h2>
+
+    <form action="/predict" method="post">
+
+        <!-- Gender -->
+        <select name="Gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <!-- Age -->
+        <input type="number" name="Age" placeholder="Age" required>
+
+        <!-- Debt (decimal allowed) -->
+        <input type="number" step="any" name="Debt" placeholder="Debt" required>
+
+        <!-- Married -->
+        <select name="Married">
+            <option value="1">Married</option>
+            <option value="0">Single</option>
+        </select>
+
+        <!-- Bank Customer -->
+        <select name="BankCustomer">
+            <option value="1">Bank Customer</option>
+            <option value="0">Not a Customer</option>
+        </select>
+
+        <!-- Education -->
+        <select name="EducationLevel">
+            <option value="1">High School</option>
+            <option value="2">Graduate</option>
+            <option value="3">Post Graduate</option>
+        </select>
+
+        <!-- Ethnicity (renamed as Category) -->
+        <input type="number" name="Ethnicity" placeholder="Category (1-5)" required>
+
+        <!-- Years Employed (decimal allowed) -->
+        <input type="number" step="any" name="YearsEmployed" placeholder="Years Employed" required>
+
+        <!-- Prior Default -->
+        <select name="PriorDefault">
+            <option value="1">Had Default</option>
+            <option value="0">No Default</option>
+        </select>
+
+        <!-- Employed -->
+        <select name="Employed">
+            <option value="1">Employed</option>
+            <option value="0">Unemployed</option>
+        </select>
+
+        <!-- Credit Score -->
+        <input type="number" name="CreditScore" placeholder="Credit Score" required>
+
+        <!-- Driver License -->
+        <select name="DriversLicense">
+            <option value="1">Has License</option>
+            <option value="0">No License</option>
+        </select>
+
+        <!-- Citizen -->
+        <select name="Citizen">
+            <option value="1">Citizen</option>
+            <option value="0">Non-Citizen</option>
+        </select>
+
+        <!-- Zip Code -->
+        <input type="number" name="ZipCode" placeholder="Zip Code" required>
+
+        <!-- Income -->
+        <input type="number" name="Income" placeholder="Income" required>
+
+        <br><br>
+        <button type="submit">Check Approval</button>
+
+    </form>
+</div>
+
+</body>
+</html>

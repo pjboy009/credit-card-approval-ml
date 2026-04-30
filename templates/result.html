@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            margin: 100px auto;
+            padding: 30px;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .approved {
+            color: green;
+        }
+
+        .rejected {
+            color: red;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <h2 class="{{ 'approved' if 'Approved' in result else 'rejected' }}">
+        {{ result }}
+    </h2>
+
+    <h3>Approval Chance: {{ chance }}%</h3>
+
+    <h4>Top Factors:</h4>
+<ul>
+    {% for r in reasons %}
+        <li>{{ r }}</li>
+    {% endfor %}
+</ul>
+
+    <a href="/" class="btn">Try Again</a>
+
+</div>
+
+</body>
+</html>
