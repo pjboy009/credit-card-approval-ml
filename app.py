@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 import pickle
 import pandas as pd
 import numpy as np
+import logging
+logging.info("App started")
 
 app = Flask(__name__)
 
