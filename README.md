@@ -91,7 +91,7 @@ credit-card-approval-ml/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-closing```
+```
 
 ## 👥 Contributors
 - Pranay Jamdade – ML Model + Backend  
