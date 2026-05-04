@@ -7,7 +7,7 @@ logging.info("App started")
 
 app = Flask(__name__)
 
-model = pickle.load(open("credit_model.pkl", "rb"))
+model = pickle.load(open("artifacts/credit_model.pkl", "rb"))
 
 @app.route("/")
 def home():
