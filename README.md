@@ -1,7 +1,12 @@
 <<<<<<< HEAD
 \# Credit Card Approval System
 
+\#Project name - Automated Credit Card Approval Using Machine Learning–Based Risk Assessment 
 
+\#Project description - 	Manual assessment of credit applications is time-consuming and prone to inconsistencies. Subjective judgment may lead to biased decisions. A    reliable automated system is required to streamline approval processes.
+
+
+\#Project goal - To build a machine learning model that predicts credit card approval outcomes based on applicant demographics, financial history, and credit behavior.
 
 \## Objective
 
