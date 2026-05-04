@@ -73,23 +73,22 @@ credit-card-approval-ml/
 ├── README.md
 │
 ├── artifacts/
-│   └── credit_model.pkl
+│ └── credit_model.pkl
 │
 ├── notebooks/
-│   ├── EDA.ipynb
-│   ├── model_training.ipynb
+│ ├── EDA.ipynb
+│ ├── model_training.ipynb
 │
 ├── src/
-│   ├── __init__.py
-│   ├── logger.py
-│   ├── exception.py
-│   ├── utils.py
-│   ├── data_ingestion.py
+│ ├── init.py
+│ ├── logger.py
+│ ├── exception.py
+│ ├── utils.py
+│ ├── data_ingestion.py
 │
 ├── templates/
-│   ├── index.html
-│   ├── result.html
-
+│ ├── index.html
+│ ├── result.html
 ---
 
 ## 👥 Contributors
