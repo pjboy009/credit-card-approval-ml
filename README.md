@@ -92,7 +92,8 @@ credit-card-approval-ml/
 │   ├── index.html
 │   └── result.html
 ```
----
+## Credit
+- Pranay Jamdade
 
 ## 🚀 Conclusion
 This project demonstrates how machine learning can be used to automate financial decision-making efficiently and accurately.
