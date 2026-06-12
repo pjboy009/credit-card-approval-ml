@@ -92,12 +92,6 @@ credit-card-approval-ml/
 │   ├── index.html
 │   └── result.html
 ```
-
-## 👥 Contributors
-- Pranay Jamdade – ML Model + Backend  
-- Vikrant Rawool – Testing + Data handling
-- Brijesh Kumar  – Fixing errors
-- Riddhi Patil   – UI
 ---
 
 ## 🚀 Conclusion
